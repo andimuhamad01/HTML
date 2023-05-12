@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AndiNet Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+      /* styling untuk main container */
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 100px ;
+      }
+      /* styling untuk judul artikel */
+      .article-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+       /* styling untuk gambar artikel */
+      .article-image {
+        max-width: 40%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      /* styling untuk teks artikel */
+      .article-text {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<a href="#" class="logo">AndiNet Blog</a>
+				<ul class="menu">
+					<li><a href="blog.html">Home</a></li>
+					<li>
+						<a href="#">Categories</a>
+						<ul class="submenu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">SQL</a></li>
+						</ul>
+					</li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="search">
+					<input type="text" placeholder="Search...">
+					<button>Search</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="main-container">
+      <h1 class="article-title">Membuat Formulir HTML yang Interaktif dengan PHP dan JavaScript</h1>
+       <img class="article-image" src="image/form.jpg" alt="Ilustrasi SQL">
+
+      <p class="article-text">
+        Formulir HTML adalah salah satu cara terbaik untuk mengumpulkan data dari pengguna di website Anda. Dalam artikel ini, kita akan membahas cara membuat formulir HTML yang interaktif dengan menggunakan PHP dan JavaScript. Dengan menggunakan PHP dan JavaScript, kita dapat menambahkan validasi pada input data, membuat dropdown yang dinamis, menambahkan tombol submit dengan pesan konfirmasi, dan masih banyak lagi.
+      </p>
+      <p class="article-text">
+        1. Membuat Formulir HTML <br>
+		Pertama, kita perlu membuat formulir HTML dasar dengan menggunakan tag form. Dalam formulir ini, kita dapat menambahkan field input, seperti text, email, password, dan lain-lain. Setiap field input harus memiliki atribut name yang akan digunakan nanti dalam skrip PHP untuk memproses data yang diinput oleh pengguna.
+      </p>
+      <p class="article-text">
+        2. Menambahkan Validasi pada Input Data <br>
+		Dalam formulir HTML, kita dapat menambahkan validasi pada input data dengan menggunakan JavaScript. Validasi ini bertujuan untuk memastikan bahwa data yang diinput oleh pengguna sesuai dengan format yang diinginkan. Misalnya, validasi pada email akan memastikan bahwa input data yang dimasukkan oleh pengguna memiliki format email yang valid.
+      </p>
+      <p class="article-text">
+        3. Membuat Dropdown Dinamis <br>
+		Dropdown dinamis adalah dropdown yang isinya akan berubah-ubah berdasarkan pilihan pengguna. Misalnya, jika pengguna memilih salah satu option pada dropdown pertama, maka option pada dropdown kedua akan berubah sesuai dengan pilihan pengguna. Dalam artikel ini, kita akan menggunakan JavaScript untuk membuat dropdown dinamis dengan memanfaatkan konsep AJAX.
+      </p>
+      <p class="article-text">
+        4. Menambahkan Tombol Submit dengan Pesan Konfirmasi <br>
+		Setelah pengguna mengisi semua field input pada formulir, mereka akan menekan tombol submit untuk mengirim data ke server. Dalam artikel ini, kita akan menambahkan tombol submit dengan pesan konfirmasi menggunakan JavaScript. Pesan konfirmasi ini akan muncul ketika pengguna menekan tombol submit, dan akan meminta konfirmasi dari pengguna sebelum data dikirim ke server.
+      </p>
+      <p class="article-text">
+        5. Memproses Data dengan PHP <br>
+		Setelah data dikirim ke server, kita perlu memproses data tersebut menggunakan skrip PHP. Dalam artikel ini, kita akan membuat skrip PHP untuk memproses data yang diinput oleh pengguna. Skrip PHP ini akan menangani data yang dikirim oleh formulir HTML, dan menyimpannya ke dalam database atau mengirimkan email ke alamat yang ditentukan.
+      </p>
+    </div>
+	<footer class="footer">
+		<div class="container">
+			<div class="about" id="about" style="width: 80%">
+			  <h2>Tentang Kami</h2>
+			  <p>Selamat datang di website kami! Kami adalah tim yang terdiri dari berbagai macam ahli di bidang teknologi. Website ini didirikan oleh Andi Muhamad pada tahun 2023 dengan tujuan untuk berbagi pengetahuan tentang teknologi dengan publik. Kami berharap konten-konten kami dapat bermanfaat bagi Anda.</p>
+			</div><br>
+
+			<div class="contact" id="contact">
+			  <h2>Hubungi Kami</h2>
+			  <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan kirim email ke <a href="mailto:andimuhamadnetizen@gmail.com">Klik Disini</a>.</p>
+			</div><br><br>
+			<p class="copy">&copy;  Copyright AndiNet Blog 2023</p>
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AndiNet Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+      /* styling untuk main container */
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 100px ;
+      }
+      /* styling untuk judul artikel */
+      .article-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+       /* styling untuk gambar artikel */
+      .article-image {
+        max-width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      /* styling untuk teks artikel */
+      .article-text {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<a href="#" class="logo">AndiNet Blog</a>
+				<ul class="menu">
+					<li><a href="blog.html">Home</a></li>
+					<li>
+						<a href="#">Categories</a>
+						<ul class="submenu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">SQL</a></li>
+						</ul>
+					</li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="search">
+					<input type="text" placeholder="Search...">
+					<button>Search</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="main-container">
+      <h1 class="article-title">Pengenalan SQL: Mengenal Dasar-Dasar SQL untuk Mengelola Database</h1>
+       <img class="article-image" src="image/sql.jpg" alt="Ilustrasi SQL">
+
+      <p class="article-text">
+        SQL (Structured Query Language) adalah bahasa pemrograman yang digunakan untuk mengelola database. Dengan SQL, kita dapat membuat, mengakses, mengelola, dan memperbarui data dalam database. SQL digunakan di banyak perusahaan dan organisasi untuk mengelola dan mengakses data mereka dengan mudah. Dalam artikel ini, kita akan membahas dasar-dasar SQL dan fitur-fitur penting yang perlu diketahui oleh pemula.
+      </p>
+      <p class="article-text">
+        1. Syntax Dasar SQL <br>
+		SQL memiliki syntax dasar yang perlu dipahami oleh pengguna untuk dapat memanipulasi data dalam database. Beberapa syntax dasar SQL meliputi SELECT, FROM, WHERE, ORDER BY, GROUP BY, dan HAVING. SELECT digunakan untuk memilih kolom atau field dari tabel, FROM digunakan untuk menentukan tabel mana yang akan digunakan, WHERE digunakan untuk menentukan kondisi yang harus dipenuhi untuk mengambil data, ORDER BY digunakan untuk mengurutkan hasil berdasarkan kolom tertentu, GROUP BY digunakan untuk mengelompokkan data berdasarkan kolom tertentu, dan HAVING digunakan untuk memfilter data yang telah di-group berdasarkan suatu kondisi tertentu.
+      </p>
+      <p class="article-text">
+        2. Tipe Data <br>
+		Dalam SQL, setiap kolom dalam tabel memiliki tipe data yang berbeda-beda. Beberapa tipe data yang umum digunakan dalam SQL meliputi INTEGER, FLOAT, CHAR, VARCHAR, DATE, dan BOOLEAN. INTEGER digunakan untuk menyimpan nilai bilangan bulat, FLOAT digunakan untuk menyimpan nilai bilangan desimal, CHAR dan VARCHAR digunakan untuk menyimpan string karakter, DATE digunakan untuk menyimpan tanggal dan waktu, dan BOOLEAN digunakan untuk menyimpan nilai true atau false.
+      </p>
+      <p class="article-text">
+        3. Operasi CRUD <br>
+		SQL memiliki empat operasi dasar untuk memanipulasi data dalam database, yaitu CREATE, READ, UPDATE, dan DELETE (disingkat menjadi CRUD). CREATE digunakan untuk membuat tabel baru dalam database, READ digunakan untuk membaca data dari tabel, UPDATE digunakan untuk memperbarui data dalam tabel, dan DELETE digunakan untuk menghapus data dari tabel.
+      </p>
+      <p class="article-text">
+        4. Kunci Asing (Foreign Key) <br>
+		Dalam SQL, kunci asing (foreign key) digunakan untuk menghubungkan dua tabel dalam database. Kunci asing digunakan untuk membuat relasi antara dua tabel, di mana sebuah tabel memiliki kolom yang mereferensikan ke kolom di tabel lain. Dengan menggunakan kunci asing, kita dapat melakukan join antara dua tabel untuk mengambil data dari kedua tabel secara bersamaan.
+      </p>
+    </div>
+	<footer class="footer">
+		<div class="container">
+			<div class="about" id="about" style="width: 80%">
+			  <h2>Tentang Kami</h2>
+			  <p>Selamat datang di website kami! Kami adalah tim yang terdiri dari berbagai macam ahli di bidang teknologi. Website ini didirikan oleh Andi Muhamad pada tahun 2023 dengan tujuan untuk berbagi pengetahuan tentang teknologi dengan publik. Kami berharap konten-konten kami dapat bermanfaat bagi Anda.</p>
+			</div><br>
+
+			<div class="contact" id="contact">
+			  <h2>Hubungi Kami</h2>
+			  <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan kirim email ke <a href="mailto:andimuhamadnetizen@gmail.com">Klik Disini</a>.</p>
+			</div><br><br>
+			<p class="copy">&copy;  Copyright AndiNet Blog 2023</p>
+	</div>
+</footer>
+</body>
+</html>
